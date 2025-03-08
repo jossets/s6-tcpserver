@@ -1,0 +1,10 @@
+version: '3'
+
+services:
+  ctf-ubuntu-s6: 
+    image: ctf-ubuntu-s6
+    build: 
+      context: ./build/.
+      args:
+        - DOCKER_BUILDKIT=1
+    container_name: ctf-ubuntu-s6
